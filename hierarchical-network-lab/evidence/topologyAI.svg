@@ -1,0 +1,202 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1668 943" width="1668" height="943" font-family="Segoe UI, Arial, sans-serif" fill="#fff">
+<defs>
+  <radialGradient id="bg" cx="50%" cy="30%" r="80%"><stop offset="0" stop-color="#0b1330"/><stop offset="1" stop-color="#050812"/></radialGradient>
+  <g id="router">
+    <path d="M-25,0 v8 a25,13 0 0 0 50,0 v-8 z" fill="#1565c0"/>
+    <ellipse cx="0" cy="0" rx="25" ry="13" fill="#42a5f5"/>
+    <path d="M-12,-3 L12,3 M-12,3 L12,-3" stroke="#fff" stroke-width="2.5"/>
+  </g>
+  <g id="switch">
+    <polygon points="-24,-3 -6,-12 24,-12 6,-3" fill="#4fc3f7"/>
+    <polygon points="-24,-3 6,-3 6,7 -24,7" fill="#1976d2"/>
+    <polygon points="6,-3 24,-12 24,-2 6,7" fill="#0d47a1"/>
+    <path d="M-14,-6 h26 M-8,-9 h26" stroke="#fff" stroke-width="1.5"/>
+  </g>
+  <g id="pc">
+    <rect x="-16" y="-14" width="32" height="22" rx="2" fill="#1e88e5" stroke="#90caf9" stroke-width="1.5"/>
+    <rect x="-20" y="10" width="40" height="6" rx="1" fill="#0d47a1"/>
+  </g>
+  <g id="phone">
+    <g transform="rotate(-25)"><rect x="-14" y="-8" width="28" height="16" rx="3" fill="#1e88e5" stroke="#90caf9"/><rect x="-9" y="-12" width="18" height="5" rx="2" fill="#0d47a1"/></g>
+  </g>
+  <g id="printer">
+    <rect x="-14" y="-18" width="28" height="12" fill="#e3f2fd"/>
+    <rect x="-20" y="-8" width="40" height="18" rx="3" fill="#1e88e5"/>
+    <rect x="-12" y="4" width="24" height="9" fill="#bbdefb"/>
+  </g>
+  <g id="ap">
+    <rect x="-26" y="-6" width="52" height="16" rx="3" fill="#1e88e5" stroke="#90caf9"/>
+  </g>
+  <g id="wifi" fill="none" stroke="#4fc3f7" stroke-width="4" stroke-linecap="round">
+    <path d="M-20,-8 a28,28 0 0 1 40,0"/><path d="M-12,0 a17,17 0 0 1 24,0"/><circle cx="0" cy="9" r="2.5" fill="#4fc3f7"/>
+  </g>
+  <g id="server">
+    <rect x="-12" y="-26" width="24" height="52" rx="2" fill="#1e88e5" stroke="#90caf9"/>
+    <path d="M-8,-18 h16 M-8,-10 h16 M-8,-2 h16" stroke="#fff"/>
+    <circle cx="0" cy="16" r="2" fill="#fff"/>
+  </g>
+  <g id="cloud"><path d="M-30,18 a16,16 0 0 1 2,-30 a22,22 0 0 1 42,-6 a18,18 0 0 1 14,36 z" fill="#42a5f5"/></g>
+</defs>
+
+<rect width="1668" height="943" fill="url(#bg)"/>
+
+<!-- ===== LINKS ===== -->
+<g stroke="#fff" stroke-width="1.2" fill="none">
+  <line x1="722" y1="82" x2="690" y2="120"/><line x1="808" y1="82" x2="842" y2="120"/>
+  <line x1="697" y1="137" x2="838" y2="137"/>
+  <line x1="671" y1="160" x2="671" y2="232"/><line x1="864" y1="160" x2="864" y2="232"/>
+  <line x1="697" y1="150" x2="866" y2="236"/><line x1="836" y1="150" x2="670" y2="236"/>
+  <line x1="645" y1="262" x2="645" y2="308"/><line x1="895" y1="262" x2="895" y2="308"/>
+  <!-- DSW to ASW -->
+  <line x1="620" y1="335" x2="357" y2="474"/><line x1="612" y1="345" x2="352" y2="480"/>
+  <line x1="615" y1="348" x2="550" y2="470"/><line x1="880" y1="345" x2="575" y2="474"/>
+  <line x1="670" y1="365" x2="757" y2="470"/><line x1="860" y1="352" x2="783" y2="470"/>
+  <line x1="660" y1="335" x2="985" y2="465"/><line x1="918" y1="348" x2="997" y2="470"/>
+  <line x1="672" y1="332" x2="1170" y2="476"/><line x1="918" y1="335" x2="1180" y2="478"/>
+  <line x1="580" y1="355" x2="548" y2="470"/><line x1="878" y1="356" x2="790" y2="470"/>
+  <!-- ASW to devices -->
+  <line x1="322" y1="515" x2="112" y2="660"/><line x1="326" y1="515" x2="200" y2="660"/><line x1="326" y1="515" x2="262" y2="660"/><line x1="326" y1="515" x2="326" y2="665"/>
+  <line x1="96" y1="552" x2="96" y2="665"/>
+  <line x1="510" y1="535" x2="455" y2="600"/><line x1="540" y1="535" x2="540" y2="600"/><line x1="567" y1="535" x2="612" y2="600"/><line x1="635" y1="675" x2="668" y2="730"/>
+  <line x1="758" y1="535" x2="752" y2="600"/><line x1="790" y1="535" x2="790" y2="600"/>
+  <line x1="806" y1="518" x2="868" y2="600"/>
+  <line x1="1012" y1="535" x2="1028" y2="600"/><line x1="1028" y1="518" x2="1090" y2="600"/><line x1="1145" y1="660" x2="1185" y2="710"/>
+  <line x1="1222" y1="515" x2="1275" y2="604"/><line x1="1218" y1="520" x2="1272" y2="604"/><line x1="1226" y1="515" x2="1335" y2="604"/>
+  <line x1="1405" y1="690" x2="1512" y2="676"/><line x1="1412" y1="700" x2="1498" y2="765"/><line x1="1360" y1="710" x2="1362" y2="768"/>
+  <line x1="456" y1="676" x2="456" y2="700"/><line x1="456" y1="738" x2="456" y2="778"/>
+  <line x1="602" y1="690" x2="602" y2="706"/><line x1="602" y1="742" x2="602" y2="782"/>
+  <line x1="790" y1="676" x2="790" y2="706"/><line x1="790" y1="742" x2="790" y2="782"/>
+  <line x1="930" y1="676" x2="930" y2="706"/><line x1="930" y1="742" x2="930" y2="782"/>
+  <line x1="1084" y1="676" x2="1084" y2="706"/><line x1="1084" y1="742" x2="1084" y2="782"/>
+</g>
+<!-- redundant links -->
+<g stroke="#ff2a3d" stroke-width="2.5"><line x1="680" y1="256" x2="862" y2="314"/><line x1="850" y1="256" x2="672" y2="314"/></g>
+<!-- trunks -->
+<g stroke="#29b6f6" stroke-width="2" stroke-dasharray="9 6"><line x1="690" y1="244" x2="842" y2="244"/><line x1="660" y1="329" x2="870" y2="329"/></g>
+<g fill="#1fdc5a">
+  <circle cx="691" cy="119" r="4"/><circle cx="842" cy="119" r="4"/><circle cx="704" cy="137" r="4"/><circle cx="671" cy="199" r="4"/><circle cx="864" cy="199" r="4"/>
+  <circle cx="645" cy="290" r="4"/><circle cx="895" cy="290" r="4"/><circle cx="357" cy="472" r="4"/><circle cx="548" cy="468" r="4"/><circle cx="760" cy="468" r="4"/><circle cx="986" cy="462" r="4"/><circle cx="1168" cy="478" r="4"/>
+  <circle cx="96" cy="606" r="4"/><circle cx="110" cy="661" r="4"/><circle cx="200" cy="658" r="4"/><circle cx="262" cy="658" r="4"/><circle cx="326" cy="663" r="4"/>
+  <circle cx="456" cy="682" r="4"/><circle cx="602" cy="695" r="4"/><circle cx="668" cy="731" r="4"/><circle cx="790" cy="682" r="4"/><circle cx="930" cy="682" r="4"/><circle cx="1084" cy="682" r="4"/><circle cx="1186" cy="710" r="4"/><circle cx="1497" cy="766" r="4"/>
+</g>
+
+<!-- ===== TOP DEVICES ===== -->
+<use href="#cloud" x="765" y="48"/>
+<text x="765" y="89" text-anchor="middle" font-size="19" font-weight="600">Internet</text>
+<use href="#router" x="671" y="137"/><use href="#router" x="863" y="137"/>
+<text x="671" y="174" text-anchor="middle" font-size="19" font-weight="600">R1</text><text x="863" y="174" text-anchor="middle" font-size="19" font-weight="600">R2</text>
+
+<!-- layer containers -->
+<rect x="620" y="226" width="310" height="76" rx="6" fill="none" stroke="#29b6f6" stroke-width="2" stroke-dasharray="8 5"/>
+<rect x="589" y="303" width="380" height="72" rx="6" fill="none" stroke="#29b6f6" stroke-width="2" stroke-dasharray="8 5"/>
+<use href="#switch" x="668" y="245"/><use href="#switch" x="865" y="245"/>
+<text x="668" y="280" text-anchor="middle" font-size="19" font-weight="700">CSW1</text><text x="865" y="280" text-anchor="middle" font-size="19" font-weight="700">CSW2</text>
+<use href="#switch" x="640" y="326"/><use href="#switch" x="893" y="326"/>
+<text x="640" y="358" text-anchor="middle" font-size="19" font-weight="700">DSW1</text><text x="893" y="358" text-anchor="middle" font-size="19" font-weight="700">DSW2</text>
+
+<!-- ===== LAYER BRACKETS ===== -->
+<g fill="none" stroke="#fff" stroke-width="1.5">
+  <path d="M922,115 q8,0 8,10 v18 q0,8 8,8 q-8,0 -8,8 v18 q0,10 -8,10"/>
+  <path d="M942,228 q8,0 8,10 v10 q0,8 8,8 q-8,0 -8,8 v10 q0,10 -8,10" transform="translate(0,0)"/>
+  <path d="M1262,470 q8,0 8,10 v18 q0,8 8,8 q-8,0 -8,8 v18 q0,10 -8,10" transform="translate(0,0)"/>
+</g>
+<g font-size="20" fill="#9fc3ff">
+  <text x="951" y="155">Edge Layer</text>
+  <text x="970" y="270">Core Layer</text>
+  <text x="989" y="339">Distribution Layer</text>
+  <text x="1288" y="511">Access Layer</text>
+</g>
+
+<!-- Vlan 100 -->
+<rect x="151" y="337" width="114" height="41" rx="20" fill="#0b1030" stroke="#8a4dff" stroke-width="2.5"/>
+<text x="208" y="364" text-anchor="middle" font-size="19" font-weight="600">Vlan 100</text>
+
+<!-- Reception info -->
+<rect x="22" y="413" width="143" height="136" rx="8" fill="#0b0f2a" stroke="#7c4dff" stroke-width="2"/>
+<g font-size="17"><text x="36" y="435">Reception:</text><text x="36" y="456">10.0.1.0/28</text><text x="36" y="477">Vlan 10</text><text x="36" y="498">Guests WiFi:</text><text x="36" y="519">10.0.1.128/24</text><text x="36" y="540">Vlan 90</text></g>
+
+<!-- Access switches -->
+<g font-size="19" font-weight="700" text-anchor="middle">
+  <use href="#switch" x="345" y="490"/><text x="345" y="526">ASW1</text>
+  <use href="#switch" x="541" y="490"/><text x="541" y="526">ASW2</text>
+  <use href="#switch" x="775" y="490"/><text x="775" y="526">ASW3</text>
+  <use href="#switch" x="997" y="490"/><text x="997" y="526">ASW4</text>
+  <use href="#switch" x="1193" y="491"/><text x="1193" y="527">ASW5</text>
+</g>
+
+<!-- ===== VLAN BOXES ===== -->
+<g fill="rgba(255,255,255,0.03)" stroke-width="2.5">
+  <rect x="22" y="607" width="349" height="241" rx="8" stroke="#7c4dff"/>
+  <rect x="384" y="600" width="139" height="245" rx="8" stroke="#ff2d6f"/>
+  <rect x="537" y="600" width="172" height="245" rx="8" stroke="#29b6f6"/>
+  <rect x="721" y="600" width="129" height="245" rx="8" stroke="#22e06a"/>
+  <rect x="862" y="600" width="140" height="245" rx="8" stroke="#ffc928"/>
+  <rect x="1014" y="600" width="242" height="245" rx="8" stroke="#ff3b57"/>
+  <rect x="1269" y="603" width="369" height="247" rx="8" stroke="#7c4dff"/>
+</g>
+<!-- subnet labels -->
+<g fill="#0a0d22" stroke-width="2">
+  <rect x="394" y="607" width="108" height="68" rx="6" stroke="#ff2d6f"/>
+  <rect x="547" y="607" width="130" height="68" rx="6" stroke="#29b6f6"/>
+  <rect x="727" y="607" width="116" height="68" rx="6" stroke="#22e06a"/>
+  <rect x="869" y="607" width="125" height="68" rx="6" stroke="#ffc928"/>
+  <rect x="1024" y="607" width="120" height="68" rx="6" stroke="#ff3b57"/>
+  <rect x="1281" y="610" width="116" height="66" rx="6" stroke="#7c4dff"/>
+</g>
+<g font-size="16">
+  <text x="404" y="626">Engineers:</text><text x="404" y="646">10.0.1.16/28</text><text x="404" y="666">Vlan 20</text>
+  <text x="554" y="626">Finance &amp; Sales:</text><text x="554" y="646">10.0.1.32/28</text><text x="554" y="666">Vlan 30</text>
+  <text x="737" y="626">Technical Team:</text><text x="737" y="646">10.0.1.48/28</text><text x="737" y="666">Vlan 40</text>
+  <text x="879" y="626">Support Team:</text><text x="879" y="646">10.0.1.64/28</text><text x="879" y="666">Vlan 50</text>
+  <text x="1034" y="626">Management:</text><text x="1034" y="646">10.0.1.80/28</text><text x="1034" y="666">Vlan 60</text>
+  <text x="1291" y="628">Basement:</text><text x="1291" y="648">10.0.1.96/28</text><text x="1291" y="668">Vlan 70</text>
+</g>
+
+<!-- devices -->
+<use href="#wifi" x="90" y="680"/><use href="#ap" x="198" y="682"/><use href="#phone" x="320" y="682"/>
+<use href="#phone" x="84" y="772"/><use href="#phone" x="199" y="772"/><use href="#pc" x="316" y="770"/>
+<use href="#phone" x="452" y="718"/><use href="#pc" x="452" y="792" transform="translate(0,0)"/>
+<use href="#phone" x="595" y="720"/><use href="#pc" x="595" y="793"/><use href="#printer" x="673" y="756"/>
+<use href="#phone" x="785" y="720"/><use href="#pc" x="785" y="796"/>
+<use href="#phone" x="925" y="720"/><use href="#pc" x="925" y="796"/>
+<use href="#phone" x="1080" y="720"/><use href="#pc" x="1082" y="796"/><use href="#ap" x="1205" y="726"/>
+<use href="#switch" x="1388" y="695"/><use href="#server" x="1532" y="667"/><use href="#pc" x="1362" y="789"/><use href="#pc" x="1517" y="789"/>
+<g font-size="16.5" text-anchor="middle">
+  <text x="88" y="722">Guests WiFi</text><text x="204" y="722">Reception-AP</text><text x="318" y="722">Phone1</text>
+  <text x="85" y="810">Guest-Phone</text><text x="199" y="810">Guard-Phone1</text><text x="315" y="810">Reception-PC2</text>
+  <text x="451" y="759">IP Phone 2</text><text x="451" y="830">Laptop3</text>
+  <text x="595" y="761">IP Phone 3</text><text x="595" y="832">Laptop2</text><text x="673" y="791">Printer0</text>
+  <text x="785" y="761">IP Phone 4</text><text x="785" y="833">PC9</text>
+  <text x="925" y="761">IP Phone 5</text><text x="925" y="833">PC4</text>
+  <text x="1083" y="762">IP Phone 6</text><text x="1083" y="835">PC12</text><text x="1203" y="762">Printer1</text>
+  <text x="1388" y="731">SVR1(1)</text><text x="1537" y="712">SVR0(DHCP Server)</text><text x="1362" y="831">Admin01</text><text x="1517" y="831">Admin02</text>
+</g>
+
+<!-- VLAN pills -->
+<g font-size="16" text-anchor="middle" fill-opacity="1">
+  <rect x="68" y="853" width="267" height="31" rx="8" fill="#14104a" stroke="#7c4dff" stroke-width="2"/><text x="205" y="874" font-size="17.5">VLAN 90 - Guests WiFi</text>
+  <rect x="383" y="853" width="140" height="31" rx="8" fill="#3a0a24" stroke="#ff2d6f" stroke-width="2"/><text x="453" y="873" font-size="14">VLAN 20 - Engineers</text>
+  <rect x="538" y="853" width="161" height="31" rx="8" fill="#082a3a" stroke="#29b6f6" stroke-width="2"/><text x="618" y="873" font-size="14">VLAN 30 - Finance &amp; Sales</text>
+  <rect x="714" y="853" width="139" height="31" rx="8" fill="#08301a" stroke="#22e06a" stroke-width="2"/><text x="783" y="873" font-size="13">VLAN 40 - Technical Team</text>
+  <rect x="864" y="853" width="141" height="31" rx="8" fill="#3a2e08" stroke="#ffc928" stroke-width="2"/><text x="934" y="873" font-size="13">VLAN 50 - Support Team</text>
+  <rect x="1046" y="856" width="188" height="31" rx="8" fill="#3a0a14" stroke="#ff3b57" stroke-width="2"/><text x="1140" y="877" font-size="16">VLAN 60 - Management</text>
+  <rect x="1327" y="856" width="252" height="31" rx="8" fill="#14104a" stroke="#7c4dff" stroke-width="2"/><text x="1453" y="877" font-size="17.5">VLAN 70 - Basement</text>
+</g>
+
+<!-- ===== LEGEND ===== -->
+<rect x="1329" y="20" width="317" height="412" rx="12" fill="#0a1030" stroke="#29b6f6" stroke-width="2.5"/>
+<text x="1345" y="54" font-size="24" font-weight="600">Legend</text>
+<g font-size="16">
+  <use href="#router" x="1374" y="84"/><text x="1424" y="86">Router</text>
+  <use href="#switch" x="1374" y="118"/><text x="1424" y="120">Switch (Core/Distribution/Access)</text>
+  <use href="#server" x="1374" y="152" transform="translate(0,0) scale(1)"/><text x="1424" y="155">Server</text>
+  <use href="#pc" x="1374" y="188" transform="translate(1374,188) scale(.8) translate(-1374,-188)"/><text x="1424" y="190">PC / Laptop</text>
+  <use href="#phone" x="1374" y="224"/><text x="1424" y="225">IP Phone</text>
+  <use href="#printer" x="1374" y="262" transform="translate(1374,262) scale(.8) translate(-1374,-262)"/><text x="1424" y="260">Printer</text>
+  <use href="#wifi" x="1374" y="296" transform="translate(1374,296) scale(.8) translate(-1374,-296)"/><text x="1424" y="296">Access Point</text>
+  <line x1="1350" y1="336" x2="1400" y2="336" stroke="#fff" stroke-width="2"/><text x="1424" y="329">Link (Access)</text>
+  <line x1="1350" y1="357" x2="1400" y2="357" stroke="#29b6f6" stroke-width="2.5" stroke-dasharray="9 6"/><text x="1424" y="358">Link (Trunk / Uplink)</text>
+  <line x1="1350" y1="381" x2="1400" y2="381" stroke="#ff2a3d" stroke-width="3"/><text x="1424" y="387">Redundant Link</text>
+  <circle cx="1376" cy="409" r="6" fill="#1fdc5a"/><text x="1424" y="415">Interface (Port)</text>
+</g>
+</svg>
