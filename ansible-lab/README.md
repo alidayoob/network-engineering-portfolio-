@@ -86,6 +86,7 @@ ansible routers -m raw -a 'show ip interface brief' -k    # ad-hoc command (-k a
   |  |--jR1
   |--@jswitches:
   |  |--jSW1
+```
 
 ## What I Learned
 
