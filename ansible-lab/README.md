@@ -40,15 +40,7 @@ Both devices have SSH enabled with a local user at privilege level 15.
 └── hosts          # inventory (INI format)
 ```
 
-### ansible.cfg
 
-```ini
-[defaults]
-inventory = ./hosts
-timeout = 60
-host_key_checking = false
-forks = 100
-```
 
 | Setting | Meaning |
 | --- | --- |
@@ -57,21 +49,7 @@ forks = 100
 | `host_key_checking` | Skips the SSH host-key prompt. Lab use only |
 | `forks` | How many devices Ansible works on in parallel |
 
-### hosts (inventory)
 
-```ini
-[routers]
-R1 ansible_host=192.168.11.11
-
-[switches]
-SW1 ansible_host=192.168.11.12
-
-[cisco:children]
-routers
-switches
-
-[cisco:vars]
-ansible_user=ALI
 ```
 
 - `[group]` defines a group. Calling a group in a command targets every device in it.
@@ -86,6 +64,28 @@ ansible routers --list-hosts             # only the router group
 ansible-inventory --graph                # show the group tree
 ansible routers -m raw -a 'show ip interface brief' -k    # ad-hoc command (-k asks for the SSH password)
 ```
+##Result of adding the YAML inventory File:
+```yaml
+@all:
+  |--@ungrouped:
+  |--@cisco:
+  |  |--@crouters:
+  |  |  |--R1
+  |  |--@cswitches:
+  |  |  |--SW1
+  |--@crouters:
+  |  |--R1
+  |--@cswitches:
+  |  |--SW1
+  |--@juniper:
+  |  |--@jrouters:
+  |  |  |--jR1
+  |  |--@jswitches:
+  |  |  |--jSW1
+  |--@jrouters:
+  |  |--jR1
+  |--@jswitches:
+  |  |--jSW1
 
 ## What I Learned
 
