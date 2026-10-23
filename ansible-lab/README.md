@@ -55,8 +55,10 @@ Both devices have SSH enabled with a local user at privilege level 15.
 - `[group]` defines a group. Calling a group in a command targets every device in it.
 - `[group:children]` builds a group out of other groups.
 - `[group:vars]` sets values (like the SSH user) for the whole group.
+```
 
 ## Example Commands
+
 ```bash
 ansible all --list-hosts                 # list all devices in the inventory
 ansible routers --list-hosts             # only the router group
@@ -64,7 +66,7 @@ ansible-inventory --graph                # show the group tree
 ansible routers -m raw -a 'show ip interface brief' -k    # ad-hoc command (-k asks for the SSH password)
 ```
 
-##Result of adding the YAML inventory File:
+## Result of adding the YAML inventory File:
 ```yaml
 @all:
   |--@ungrouped:
