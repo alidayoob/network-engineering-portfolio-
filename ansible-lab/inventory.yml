@@ -1,5 +1,10 @@
 ---
 all:
+  vars: 
+    ansible_user: ALI
+    ansible_password: alidayoob
+    ansible_connection: ansible.netcommon.network_cli
+    ansible_network_os: cisco.ios.ios
   children:
     cisco:
       children:
