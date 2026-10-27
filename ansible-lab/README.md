@@ -91,9 +91,13 @@ ansible routers -m raw -a 'show ip interface brief' -k    # ad-hoc command (-k a
 ```
 
 ## First Playbook (to get a backup copy of the host's config)
-- ### the playbook file: [playbook](./backup2.yml)
-- ### the resutl :
+- ### Playbook File: [playbook](./backup2.yml)
+- ### Result :
 ![Playbook-result](./evidence/first-playbook-result.png)
+## Second Playbook : simple playbook to get assigned interfaces information from managed nodes
+- ### Playbook File: [playbook2](./assigned.interfaces.pb.yaml)
+- ### result :
+![result2](./evidence/playbook%20No.2.png) 
 ## What I Learned
 
 - An ad-hoc command has the shape `ansible <devices> -m <module> -a "<arguments>"`, and the order of the options is free.
@@ -102,7 +106,7 @@ ansible routers -m raw -a 'show ip interface brief' -k    # ad-hoc command (-k a
 - Linux paths are case-sensitive: a wrong folder name was enough to break the inventory.
 - Start the External Connector and the unmanaged switch in CML before testing, otherwise the devices are unreachable.
 - Ci- A playbook that backs up device configurationssco modules (`cisco.ios.ios_command`, `ios_facts`, `ios_config`)
-
+- A playbook to view assigned interfaces on managed nodes 
 ## Next Steps
 - Jinja2 templates, roles, and Ansible Vault
 
