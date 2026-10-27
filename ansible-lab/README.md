@@ -97,7 +97,7 @@ ansible routers -m raw -a 'show ip interface brief' -k    # ad-hoc command (-k a
 ## Second Playbook : simple playbook to get assigned interfaces information from managed nodes
 - ### Playbook File: [playbook2](./assigned.interfaces.pb.yaml)
 - ### result :
-![result2](./evidence/playbook%20No.2.png) 
+![result2](./evidence/playbook-No.2.png) 
 ## What I Learned
 
 - An ad-hoc command has the shape `ansible <devices> -m <module> -a "<arguments>"`, and the order of the options is free.
