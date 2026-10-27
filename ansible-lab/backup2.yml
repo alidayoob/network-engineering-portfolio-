@@ -1,0 +1,29 @@
+---
+- name: backup a specific device's config
+  hosts: crouters
+  gather_facts:  false
+  vars:
+    backup_root:  ./backups
+  tasks:
+    - name:  ensure backups file exists
+      ansible.builtin.file:
+        path: "{{backup_root}}"
+        state: directory
+      run_once:  true
+    - name:  ensure host's file exists
+      ansible.builtin.file:
+        path: "{{backup_root}}/{{inventory_hostname}}"
+        state:  directory
+    - name:  get time
+      ansible.builtin.command: date +%Y%m%d_%H%M%S
+      register:  timestamp
+      changed_when:  false
+    - name: run show running-config on remote host
+      cisco.ios.ios_command:
+        commands:
+          - show running-config
+      register:  config
+    - name: save config to a text file
+      ansible.builtin.copy:
+        content:  config
+        dest:  "{{backup_root}}/{{inventory_hostname}}/running-config_{{timestamp.stdout}}.txt"
