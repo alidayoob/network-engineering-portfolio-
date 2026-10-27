@@ -1,0 +1,13 @@
+---
+- name:  get assigned interfaces informations
+  hosts:  cisco
+  gather_facts:  false
+  tasks:
+    - name:  runn show ip interfaces brief on remote host
+      cisco.ios.ios_command:
+        commands:
+          - show ip interface brief | exc unassigned
+      register:  interfaces_info
+    - name: show results
+      ansible.builtin.debug:
+        var:  interfaces_info.stdout
