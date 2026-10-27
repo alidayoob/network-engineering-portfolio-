@@ -90,6 +90,10 @@ ansible routers -m raw -a 'show ip interface brief' -k    # ad-hoc command (-k a
   |  |--jSW1
 ```
 
+## First Playbook (to get a backup copy of the host's config)
+- ### the playbook file: [playbook](./backup2.yml)
+- ### the resutl :
+![Playbook-result](./evidence/first-playbook-result.png)
 ## What I Learned
 
 - An ad-hoc command has the shape `ansible <devices> -m <module> -a "<arguments>"`, and the order of the options is free.
@@ -97,12 +101,9 @@ ansible routers -m raw -a 'show ip interface brief' -k    # ad-hoc command (-k a
 - Ansible silently ignores unknown settings in `ansible.cfg`. A typo such as `folks` instead of `forks` does nothing, so check with `ansible-config dump --only-changed`.
 - Linux paths are case-sensitive: a wrong folder name was enough to break the inventory.
 - Start the External Connector and the unmanaged switch in CML before testing, otherwise the devices are unreachable.
+- Ci- A playbook that backs up device configurationssco modules (`cisco.ios.ios_command`, `ios_facts`, `ios_config`)
 
 ## Next Steps
-
-- Inventory in YAML format
-- Cisco modules (`cisco.ios.ios_command`, `ios_facts`, `ios_config`)
-- A playbook that backs up device configurations
 - Jinja2 templates, roles, and Ansible Vault
 
 ## Notes
