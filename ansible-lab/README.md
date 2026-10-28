@@ -107,6 +107,7 @@ ansible routers -m raw -a 'show ip interface brief' -k    # ad-hoc command (-k a
 - Start the External Connector and the unmanaged switch in CML before testing, otherwise the devices are unreachable.
 - Ci- A playbook that backs up device configurationssco modules (`cisco.ios.ios_command`, `ios_facts`, `ios_config`)
 - A playbook to view assigned interfaces on managed nodes 
+- Using "wait for" and 'match' with "cisco.ios.ios_command" module 
 ## Next Steps
 - Jinja2 templates, roles, and Ansible Vault
 
