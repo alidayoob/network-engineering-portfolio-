@@ -1,0 +1,18 @@
+---
+- name:  check the loopback interface on Cisco Routers
+  hosts:  crouters
+  gather_facts:  false
+  vars:
+  tasks:
+    - name:  do show interface on managed Cisco routers
+      cisco.ios.ios_command:
+        commands:
+          - show interface
+        wait_for:
+          - result[0] contains loopback
+          - result[0] contains Gigabit
+        match:  all
+      register:  result
+    - name:  show result
+      ansible.builtin.debug:
+        var:  result.stdout
