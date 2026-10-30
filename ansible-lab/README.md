@@ -98,6 +98,10 @@ ansible routers -m raw -a 'show ip interface brief' -k    # ad-hoc command (-k a
 - ### Playbook File: [playbook2](./assigned.interfaces.pb.yaml)
 - ### result :
 ![result2](./evidence/playbook-No.2.png) 
+## Third Playbook :finding the device with a specific IP address
+- ### Playbook File: [playbook3](./find.spicific.ip.yml)
+- ### result :
+![result3](./evidence/playbook.No3.png)
 ## What I Learned
 
 - An ad-hoc command has the shape `ansible <devices> -m <module> -a "<arguments>"`, and the order of the options is free.
@@ -108,6 +112,7 @@ ansible routers -m raw -a 'show ip interface brief' -k    # ad-hoc command (-k a
 - Ci- A playbook that backs up device configurationssco modules (`cisco.ios.ios_command`, `ios_facts`, `ios_config`)
 - A playbook to view assigned interfaces on managed nodes 
 - Using "wait for" and 'match' with "cisco.ios.ios_command" module 
+- Using "when" in a Playbook to find the device that has a specific Ip address.
 ## Next Steps
 - Jinja2 templates, roles, and Ansible Vault
 
