@@ -1,5 +1,5 @@
 ---
-- name:  !! Find the device that has the desired Ip address !!
+- name:  Find the device that has the desired Ip address
   gather_facts:  false
   hosts:  cisco
   vars_prompt:
