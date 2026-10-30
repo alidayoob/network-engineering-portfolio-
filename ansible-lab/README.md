@@ -113,6 +113,7 @@ ansible routers -m raw -a 'show ip interface brief' -k    # ad-hoc command (-k a
 - A playbook to view assigned interfaces on managed nodes 
 - Using "wait for" and 'match' with "cisco.ios.ios_command" module 
 - Using "when" in a Playbook to find the device that has a specific Ip address.
+- Using of "ansible-playbook --check / ansoble-playbook --syntax-check / ansible-inventory --ghraph"
 ## Next Steps
 - Jinja2 templates, roles, and Ansible Vault
 
