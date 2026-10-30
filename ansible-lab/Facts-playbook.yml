@@ -1,0 +1,15 @@
+---
+- name:  gather Cisco devices facts
+  hosts:  cisco
+  gather_facts:  false
+  vars:
+  tasks:
+    - name:  Gathering devices informations
+      cisco.ios.ios_facts:
+        gather_subset:  all
+    - name:  show wanted informations
+      ansible.builtin.debug:
+        msg: "{{inventory_hostname}}:{{ansible_net_hostname}}, version:{{ansible_net_version}},ios:{{ansible_net_iostype}}"
+    - name: show interfaces info
+      ansible.builtin.debug:
+        msg: "{{inventory_hostname}} interfacer: {{ansible_net_interfaces}}"
