@@ -114,6 +114,9 @@ ansible routers -m raw -a 'show ip interface brief' -k    # ad-hoc command (-k a
 - Using "wait for" and 'match' with "cisco.ios.ios_command" module 
 - Using "when" in a Playbook to find the device that has a specific Ip address.
 - Using of "ansible-playbook --check / ansoble-playbook --syntax-check / ansible-inventory --ghraph"
+- Using "vars_prompt" to enter a variable while running the playbook
+- Basics of cisco.ios.ios_facts module
+
 ## Next Steps
 - Jinja2 templates, roles, and Ansible Vault
 
